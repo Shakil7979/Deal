@@ -11,7 +11,7 @@ $(document).ready(function(){
         nav:true,
         dots:false, 
         items:4,
-        autoplay: true,
+        // autoplay: true,
         margin:10,
         navText: ["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"],
         responsive:{ 
