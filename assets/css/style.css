@@ -1,0 +1,333 @@
+/*********************************/
+/***********1.GLOBAL CSS*********/
+/********************************/ 
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
+      url('../fonts/SegoeUI-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+} 
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI.woff2') format('woff2'),
+      url('../fonts/SegoeUI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-size: 1.6rem;
+    overflow-x: hidden;  
+    font-family: 'Quicksand', sans-serif;
+    margin: 80px 0;
+  }
+  ::-moz-selection {
+    background: #fff;
+    color: #199d99;
+  }
+  ::selection {
+    background: #fff;
+    color: #199d99;
+  }
+  :root {
+    --blue: #199d99;
+    --white: #ffffff;
+  }
+  html {
+    font-size: 62.5%;
+    line-height: 25px;
+    line-height: 25px;
+    line-height: 2.5rem;
+  }
+  button:focus {
+    outline: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+/*********************************/
+/*********** HEADER CSS*********/
+/********************************/
+
+.breadcamp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.breadcamp span,
+.breadcamp a {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #929292;
+}
+.breadcamp h3 {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #0796A7;
+}
+.header h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 31px;
+  color: #494949;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.header-btn a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #244089;
+}
+
+/*********************************/
+/*********** BANNER CSS*********/
+/********************************/
+
+.single-slider img {
+  width: 100% !important;
+  height: 500px;
+  object-fit: cover;
+}
+.single-slider{
+  position: relative;
+}
+.single-slider:after{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0,0,0.3);
+}
+.banner-rigt img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+}
+.banner-slider{
+  position: relative;
+} 
+.banner-slider .owl-nav .owl-prev span {
+  position: absolute;
+  top: 45%;
+  left: 20px;
+  color: #fff;
+  font-size: 45px;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px; 
+  line-height: 27px;
+  text-align: center;
+}
+.banner-slider .owl-nav .owl-next span {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  color: #fff;
+  font-size: 45px;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px; 
+  line-height: 27px;
+  text-align: center;
+}
+
+
+/*********************************/
+/********* HOTEL INFO CSS*********/
+/********************************/
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1.25rem;
+  font-size: 1.5rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: transparent;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+.accordion-body {
+  padding: 1rem 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #494949;
+}
+.hotel-info-right {
+  background: #0796A7;
+  padding: 20px;
+}
+.hotel-info-right ul li h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.hotel-info-right ul li p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px; 
+  color: #FFFFFF;
+}
+.hotel-info-right ul li hr{
+  background:#fff;
+}
+.hotel-info-right a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #244089;
+  padding: 18px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hotel-bottom {
+  background: #244089;
+  padding: 20px;
+}
+.hotel-bottom p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.hotel-bottom span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  display: block;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 14px;
+}
+
+
+/*********************************/
+/********* PACKAGE CSS*********/
+/********************************/
+.section-title h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #244089;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.pack-single {
+  position: relative;
+}
+.pack-single::after{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0,0,0.2);
+}
+.pack-single h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 99;
+}
+.pack-single img {
+  width: 100%;
+}
+.main-pack .owl-nav .owl-prev i {
+  position: absolute;
+  font-size: 20px;
+  top: -50px;
+  right: 80px;
+}
+.main-pack .owl-nav .owl-next i:hover,
+.main-pack .owl-nav .owl-prev i:hover{
+  color: #244089;
+}
+.main-pack .owl-nav .owl-next i {
+  position: absolute;
+  font-size: 20px;
+  top: -50px;
+  right: 40px;
+}
