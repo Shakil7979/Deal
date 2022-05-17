@@ -482,3 +482,6 @@ ANIMATIONS
 .sub-right p {
   line-height: 24px;
 }
+.item-link{
+  display: block;
+}
