@@ -385,9 +385,7 @@ body {
 }
 .main-title {
   color: aliceblue;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 5px rgba(45, 44, 44, 0.77),
-  -1px 2px 1px rgba(50, 50, 50, 0.8);
+  text-transform: uppercase; 
   transform-origin: top left;
   transition: 0.5s;
   display: flex;
@@ -400,8 +398,7 @@ body {
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
-  color: aliceblue;
-  text-shadow: black 1px 1px 5px;
+  color: aliceblue; 
   opacity: 0;
   transition:  0.4s;
   background: rgb(7, 150, 167);
@@ -458,9 +455,13 @@ ANIMATIONS
 .sub-left h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 27px;
   color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.sub-left{
+  flex: 0 0 65%;
 }
 .sub-left p {
   font-style: normal;
@@ -468,8 +469,16 @@ ANIMATIONS
   font-size: 13px;
   line-height: 16px;
   color: #FFFFFF;
+  padding-right: 10px;
 }
 .sub-right {
   border-left: 2px solid #fff;
   padding-left: 11px;
+  flex: 0 0 35%;
+}
+.sub-right h5 {
+  margin-bottom: 5px;
+}
+.sub-right p {
+  line-height: 24px;
 }
